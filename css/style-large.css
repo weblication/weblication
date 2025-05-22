@@ -1,29 +1,29 @@
+.navsmall {
+    display: flex;
+    justify-content: center;
+	margin: 0 20px 0 20px;
+}
+
 header{
 	padding-bottom: 30px;
 }
 
 header ul {
-	padding-bottom: 10px;
 	padding-top:5px;
+}
+
+header ul li {
+    display: inline;
+    padding: 10px;
 	border-bottom: 1px solid #CCCCCC;
 }
 
-header section ul{
-	padding-top: 10px;
+header ul li.active {
+    border-top: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid black; 
 }
-
-header ul li{
-	display: inline;
-	padding: 10px;
-}
-
-header ul li.active{
-	border-bottom: 2px solid black;
-	border-left: 1px solid #CCCCCC;
-	border-top: 1px solid #CCCCCC;
-	border-right: 1px solid #CCCCCC;
-}
-
 
 header img:hover {
 	position: relative;
@@ -62,7 +62,6 @@ main section article{
 footer .formContainer{
 	margin-bottom: 30px;
 	margin: 20px;
-
 	margin-left: 6vw;
 	margin-right: 3vw
 }
@@ -75,4 +74,8 @@ footer nav{
 
 #invisibleforbig{
 	display: none;
+}
+
+header li.login {
+    margin-left: auto;
 }

@@ -78,17 +78,13 @@ header{
 }
 
 header img {
-	border-radius: 50%;
-	margin: 0 50px 0 0;
-	width: 10%;
+	border-radius: 25%;
+	margin: 20px 20px 0 20px;
+	width: 5%;
 	min-width:75px;
 	max-width: 150px;
 	float: right;
 	z-index: 2;
-}
-
-header nav:first-of-type{
-	padding-top: 18px;
 }
 
 header section a:link{
@@ -112,7 +108,6 @@ main section article{
 	padding: 18px 20px 18px 20px;
 }
 
-
 main section article section.space{
 	margin: 18px 0 0 0;
 }
@@ -131,11 +126,6 @@ main section article figure img{
 	border-radius: 20px;
 	min-width: 150px;
 	max-width: 170px;
-}
-
-.mylogo{
-	min-width: 198px;
-	max-width: 18vw;
 }
 
 aside{
@@ -229,7 +219,6 @@ article ul li img.linkimg{
 }
 
 article ul li img.logo{
-	/* border-radius: 30px; */
 	width: 13vw;
 }
 
@@ -259,118 +248,6 @@ ul.next li{
 	list-style-type: circle;
 }
 
-#slideshow1 {
-	float: right;
-	margin: 0 0 0 20px;
-	text-align: center;
-	overflow: hidden;
-	max-width: 18vw;
-	max-height: 12vw;
-	min-width: 198px;
-	min-height: 132px;
-	margin: 0 auto;
-}
-
-#slideshow2 {
-	float: right;
-	margin: 0 0 0 20px;
-	text-align: center;
-	overflow: hidden;
-	max-width: 18vw;
-	max-height: 12vw;
-	min-width: 198px;
-	min-height: 132px;
-	margin: 0 auto;
-}
-
-#slideshow3 {
-	float: right;
-	margin: 0 0 0 20px;
-	text-align: center;
-	overflow: hidden;
-	max-width: 18vw;
-	max-height: 12vw;
-	min-width: 198px;
-	min-height: 132px;
-	margin: 0 auto;
-}
-
-.slide-wrapper {
-    width: calc(4 * 18vw);
-    min-width: calc(4 * 198px);
-    animation: slide 18s ease infinite;
-}
-  
-.slide {
-	float: left;
-	width: 18vw;
-	height: 12vw;
-
-	min-width: 198px;
-	min-height: 132px;
-	
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-  
-#slideshow1 .slide:nth-child(1) {
-	background-image: url('../images/Theater/vettig1.jpg');
-}
-  
-#slideshow1 .slide:nth-child(2) {
-	background-image: url('../images/Theater/vettig2.jpg');
-}
-  
-#slideshow1 .slide:nth-child(3) {
-	background-image: url('../images/Theater/vettig3.jpg');
-}
-  
-#slideshow1 .slide:nth-child(4) {
-	background-image: url('../images/Theater/vettig4.jpg');
-}
-
-#slideshow2 .slide:nth-child(1) {
-	background-image: url('../images/Theater/vettig5.jpg');
-}
-  
-#slideshow2 .slide:nth-child(2) {
-	background-image: url('../images/Theater/vettig6.jpg');
-}
-  
-#slideshow2 .slide:nth-child(3) {
-	background-image: url('../images/Theater/vettig7.jpg');
-}
-  
-#slideshow2 .slide:nth-child(4) {
-	background-image: url('../images/Theater/vettig8.jpg');
-}
-  
-#slideshow3 .slide:nth-child(1) {
-	background-image: url('../images/Theater/vettig9.jpg');
-}
-  
-#slideshow3 .slide:nth-child(2) {
-	background-image: url('../images/Theater/vettig10.jpg');
-}
-  
-#slideshow3 .slide:nth-child(3) {
-	background-image: url('../images/Theater/vettig11.jpg');
-}
-  
-#slideshow3 .slide:nth-child(4) {
-	background-image: url('../images/Theater/vettig12.jpg');
-}
-  
-@keyframes slide {
-	20% {margin-left: -0%;}
-	30% {margin-left: -100%;}
-	50% {margin-left: -100%;}
-	60% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	80% {margin-left: -300%;}
-	90% {margin-left: -300%;}
-}
-
 footer{
 	background-image: url('../images/Dandelion.jpg');
 	background-position: center;
@@ -381,7 +258,6 @@ footer{
 }
 
 section.width{
-	/* max-width: 1000px; */
 	margin: auto;
 }
 
@@ -409,16 +285,6 @@ aside h2.indent{
     box-sizing: border-box;
 	max-width: 300px;
 	display: inline-block;	
-}
-
-.formContainer input,
-.formContainer textarea {
-    font-family: 'Poppins', sans-serif;
-}
-
-.formContainer input::placeholder,
-.formContainer textarea::placeholder {
-    font-family: 'Poppins', sans-serif;
 }
 
 footer nav{
@@ -479,7 +345,7 @@ footer nav ul li a img{
 
 form{
 	padding: 16px;
-	background-color: #000000;
+	background-color: cornflowerblue;
 	border-radius: 30px;
 }
 
@@ -492,14 +358,16 @@ aside form{
 input{
 	margin: 0 0 16px;
 	width: 270px;
+	height: 40px;
 	padding: 4px;
     box-sizing: border-box;
 	border-radius: 10px;
 }
 
-textarea{
+textarea, select{
 	margin: 0 0 16px;
 	width: 270px;
+	min-height: 40px;
 	padding: 4px;
     box-sizing: border-box;
 	resize: none;
@@ -516,20 +384,20 @@ button{
 	margin-bottom: 4px;
 }
 
-#unity-container { position: relative; z-index: 2; }
-#unity-container.unity-mobile { position: fixed; width: 100vw; height: 100% }
-#unity-canvas { background: #1F1F20 }
-.unity-mobile #unity-canvas { width: 100%; height: 100% }
-#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
-#unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
-#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
-#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
-#unity-footer { position: relative }
-.unity-mobile #unity-footer { display: none }
-#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
-#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
-#unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
-#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+button:hover{
+	background-color: rgba(50, 205, 50, 0.8);
+}
+
+input[type="text"],
+textarea[type="text"],
+button[type="text"],
+select[type="text"],
+input[type="submit"] {
+	width: calc(100%); 
+	margin-bottom: 10px; 
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+}
 
 canvas {
 	max-width: 1000px;
